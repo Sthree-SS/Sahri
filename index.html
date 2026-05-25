@@ -1,9 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Portofolio Sahri</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahri — Game & Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>coming soon</h1>
+
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">
+      <i class="fas fa-code"></i>
+    </div> SAHRI
+  </a>
+  <ul class="nav-links">
+    <li><a href="#" class="active">Beranda</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="nav-hamburger" title="Menu" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="Background.png" alt="Hero Background" class="hero-bg-img">
+    <div class="hero-bg-gradient"></div>
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-left">
+
+      <h1 class="hero-title">
+        Sahri <span>DEV</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        <span class="hero-subtitle-line"></span>Game & Web Developer
+      </p>
+
+      <p class="hero-desc">
+        Saya membuat pengalaman digital yang menarik melalui game dan website yang modern dan interaktif.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">Lihat Projects <span class="btn-arrow">→</span></a>
+        <a href="#contact" class="btn-secondary">Kontak Saya</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-card">
+    <div class="stat">
+      <i class="fas fa-code stat-icon"></i>
+      <div class="stat-num">0</div>
+      <div class="stat-label">Project Selesai</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <i class="fas fa-laptop-code stat-icon"></i>
+      <div class="stat-num">5</div>
+      <div class="stat-label">Teknologi Dikuasai</div>
+    </div>
+  </div>
+
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 90" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C180,90 360,0 540,45 C720,90 900,10 1080,50 C1260,90 1380,30 1440,40 L1440,90 L0,90 Z" fill="#f5efe6"/>
+    </svg>
+  </div>
+</section>
+
+<main id="about">
+  <div class="container">
+    <div class="sections-grid reveal">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon">👤</div>
+          <h2 class="card-title">Tentang Saya</h2>
+        </div>
+        <p class="about-text">
+          Saya tertarik dengan dunia pemrograman dan teknologi. Saya senang membuat project, belajar hal baru, dan menyelesaikan masalah dengan kode.
+        </p>
+        <p class="about-text">
+          Tujuan saya adalah menjadi developer yang bisa membuat hal bermanfaat untuk banyak orang.
+        </p>
+      </div>
+
+      <div class="projects-card" id="projects">
+        <div class="projects-header">
+          <div class="card-header" style="margin-bottom:0;">
+            <div class="card-icon">📁</div>
+            <h2 class="card-title">Projects</h2>
+          </div>
+        </div>
+
+        <div class="coming-soon-wrap">
+          <div class="coming-soon-icon">🚀</div>
+          <h3 class="coming-soon-title">Coming Soon</h3>
+          <p class="coming-soon-desc">sedang dalam pengerjaan</p>
+          <div class="coming-soon-dots">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-grid reveal" id="skills">
+
+      <div class="card">
+        <div class="card-header">
+          <i class="fas fa-laptop-code"></i>
+          <h2 class="card-title">Skills</h2>
+        </div>
+
+        <div class="skills-icons">
+          <div class="skill-item">
+            <i class="devicon-html5-plain colored"></i>
+            <span class="skill-label">HTML</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-css3-plain colored"></i>
+            <span class="skill-label">CSS</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-javascript-plain colored"></i>
+            <span class="skill-label">JavaScript</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-github-original colored"></i>
+            <span class="skill-label">GitHub</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-vscode-plain colored"></i>
+            <span class="skill-label">VS Code</span>
+          </div>
+        </div>
+
+        <p class="skill-tagline">Terus belajar, terus berkembang.</p>
+      </div>
+
+      <div class="card" id="contact">
+        <div class="card-header">
+          <h2 class="card-title">Kontak</h2>
+        </div>
+
+        <div class="social-grid">
+
+          <a href="mailto:syahrisoparudin33@gmail.com" class="social-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <span>Email</span>
+          </a>
+
+          <a href="https://vm.tiktok.com/ZS9YsJvmD4Sm4-pLsIe/" class="social-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.19 8.19 0 0 0 4.79 1.52V6.78a4.85 4.85 0 0 1-1.02-.09z"/></svg>
+            <span>TikTok</span>
+          </a>
+
+          <a href="https://www.instagram.com/sy.hriii33?igsh=MnRhNzNsMjdia3J4" class="social-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <span>Instagram</span>
+          </a>
+
+          <a href="https://github.com/Sthree-SS" class="social-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <span>GitHub</span>
+          </a>
+
+          <a href="http://www.youtube.com/@SahriDEv-s3s" class="social-btn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span>YouTube</span>
+          </a>
+
+        </div>
+
+        <div style="display:flex;align-items:center;">
+          <a href="mailto:syahrisoparudin33@gmail.com" class="btn-primary" style="font-size:0.85rem;padding:12px 22px;">
+            Kirim Pesan <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  © 25/05/2026 <span class="footer-heart"></span>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
