@@ -379,7 +379,6 @@ main {
   margin-bottom: 22px;
 }
 
-/* ── PROJECT CAROUSEL NAV ── */
 .proj-carousel-nav {
   display: flex; gap: 6px;
 }
@@ -404,7 +403,6 @@ main {
   transform: none;
 }
 
-/* ── CAROUSEL OUTER ── */
 .proj-carousel-outer {
   overflow: hidden;
   border-radius: 16px;
@@ -421,7 +419,6 @@ main {
   width: 100%;
 }
 
-/* ── PROJ CARD FULL (carousel style) ── */
 .proj-card-full {
   display: flex;
   gap: 0;
@@ -451,7 +448,6 @@ main {
   pointer-events: none;
 }
 
-/* ── DOTS ── */
 .proj-dots {
   display: flex; gap: 6px; justify-content: center;
   margin-top: 12px;
@@ -473,7 +469,6 @@ main {
   background: rgba(90,40,10,0.35);
 }
 
-/* ── LEGACY (keep for thumb mockup styles) ── */
 .proj-thumb-wrap {
   position: relative;
   width: 110px;
@@ -496,7 +491,6 @@ main {
   background: linear-gradient(to right, transparent 60%, rgba(245,239,230,0.15));
 }
 
-/* Mockup placeholder untuk thumbnail */
 .proj-thumb-mockup {
   padding: 10px;
   width: 100%;
@@ -590,7 +584,6 @@ main {
   transform: translateY(-1px);
 }
 
-/* ── PROJ CARD V2 (horizontal, thumbnail 16:9 di kiri) ── */
 .proj-card-v2 {
   flex-direction: row;
   align-items: stretch;
@@ -626,7 +619,6 @@ main {
   width: 80%; margin: auto;
 }
 
-/* Coming Soon thumbnail area */
 .proj-thumb-coming {
   background: linear-gradient(135deg, #1a0f08 0%, #2d1a0e 50%, #4a2c1a 100%);
 }
@@ -641,7 +633,6 @@ main {
   margin-bottom: 0;
 }
 
-/* Coming Soon body — tengah vertikal & horizontal */
 .proj-coming-body {
   display: flex;
   flex-direction: column;

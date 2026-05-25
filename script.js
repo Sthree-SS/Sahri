@@ -53,7 +53,6 @@ function setActiveNav() {
 
 window.addEventListener('scroll', setActiveNav, { passive: true });
 setActiveNav();
-// ── PROJECT CAROUSEL ──
 (function () {
   const track = document.getElementById('projTrack');
   const dots  = document.querySelectorAll('.proj-dot');
@@ -80,7 +79,6 @@ setActiveNav();
     dot.addEventListener('click', () => goTo(+dot.dataset.index));
   });
 
-  // Touch / swipe support
   let startX = 0, isDragging = false;
   const outer = track.parentElement;
 
@@ -96,7 +94,6 @@ setActiveNav();
     isDragging = false;
   }, { passive: true });
 
-  // Mouse drag support
   outer.addEventListener('mousedown', e => {
     startX = e.clientX;
     isDragging = true;
