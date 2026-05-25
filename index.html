@@ -46,11 +46,11 @@
       </h1>
 
       <p class="hero-subtitle">
-        <span class="hero-subtitle-line"></span>Game & Web Developer
+        Web & Game Developer Enthusiast
       </p>
 
       <p class="hero-desc">
-        Saya membuat pengalaman digital yang menarik melalui game dan website yang modern dan interaktif.
+        Saya tertarik dengan dunia pemrograman, web development, dan game development. Saat ini saya terus belajar dengan membuat berbagai project dan mengeksplorasi teknologi baru untuk mengembangkan kemampuan saya.
       </p>
 
       <div class="hero-buttons">
@@ -86,33 +86,110 @@
     <div class="sections-grid reveal">
       <div class="card">
         <div class="card-header">
-          <div class="card-icon">👤</div>
+          <i class="fas fa-user"></i>
           <h2 class="card-title">Tentang Saya</h2>
         </div>
         <p class="about-text">
-          Saya tertarik dengan dunia pemrograman dan teknologi. Saya senang membuat project, belajar hal baru, dan menyelesaikan masalah dengan kode.
+          Saya adalah seorang pemula yang memiliki minat di bidang web development dan game development. Saya senang belajar hal baru, membuat project, dan mengubah ide menjadi sesuatu yang dapat digunakan dan dinikmati orang lain.
         </p>
         <p class="about-text">
-          Tujuan saya adalah menjadi developer yang bisa membuat hal bermanfaat untuk banyak orang.
+          Saat ini saya terus mengembangkan kemampuan melalui project pribadi dan berbagai sumber belajar online. Tujuan saya adalah menjadi developer yang dapat menciptakan website dan game yang bermanfaat, kreatif, dan menarik.
         </p>
       </div>
 
       <div class="projects-card" id="projects">
         <div class="projects-header">
           <div class="card-header" style="margin-bottom:0;">
-            <div class="card-icon">📁</div>
+            <i class="fas fa-folder"></i>
             <h2 class="card-title">Projects</h2>
+          </div>
+          <!-- Carousel Nav Arrows -->
+          <div class="proj-carousel-nav">
+            <button class="proj-arrow proj-arrow-prev" id="projPrev" aria-label="Previous project">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="proj-arrow proj-arrow-next" id="projNext" aria-label="Next project">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
           </div>
         </div>
 
-        <div class="coming-soon-wrap">
-          <div class="coming-soon-icon">🚀</div>
-          <h3 class="coming-soon-title">Coming Soon</h3>
-          <p class="coming-soon-desc">sedang dalam pengerjaan</p>
-          <div class="coming-soon-dots">
-            <span></span><span></span><span></span>
+        <!-- CAROUSEL WRAPPER -->
+        <div class="proj-carousel-outer">
+          <div class="proj-carousel-track" id="projTrack">
+
+            <!-- SLIDE 1: Portfolio Website -->
+            <div class="proj-slide">
+              <div class="proj-card-full proj-card-v2">
+                <div class="proj-thumb-16x9">
+                  <!-- Ganti src dengan foto screenshot proyekmu -->
+                  <img src="Screenshot 2026-05-25 155539.png" alt="Portfolio Website thumbnail"
+                       onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                  <div class="proj-thumb-fallback" style="display:none;background:linear-gradient(135deg,#2d1a0e,#8b5a2b);">
+                    <div class="proj-thumb-mockup ptm-center">
+                      <div class="ptm-bar w70 accent"></div>
+                      <div class="ptm-bar w90"></div>
+                      <div class="ptm-row">
+                        <div class="ptm-box"></div>
+                        <div class="ptm-box"></div>
+                        <div class="ptm-box tall"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="proj-card-number">01</div>
+                </div>
+                <div class="proj-card-body">
+                  <div class="proj-meta">
+                    <span class="proj-tag">Web</span>
+                    <span class="proj-tag">HTML</span>
+                    <span class="proj-tag">CSS</span>
+                    <span class="proj-tag">JavaScript</span>
+                  </div>
+                  <h3 class="proj-name">Portfolio Website</h3>
+                  <p class="proj-desc">Ini adalah website portfolio pertama saya sebagai pemula di web development. Saya masih belajar dasar HTML, CSS, dan JavaScript sambil mengembangkan tampilan website ini.</p>
+                  <div class="proj-links">
+                    <a href="https://sthree-ss.github.io/Sahri/" class="proj-btn proj-btn-demo">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      Demo
+                    </a>
+                    <a href="https://github.com/Sthree-SS/Sahri" class="proj-btn proj-btn-code">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                      Source Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3: Coming Soon -->
+            <div class="proj-slide">
+              <div class="proj-card-full proj-card-v2 proj-card-coming">
+                <div class="proj-thumb-16x9 proj-thumb-coming">
+                  <div class="coming-thumb-inner">
+                    <div class="coming-soon-icon">🚀</div>
+                  </div>
+                  <div class="proj-card-number">03</div>
+                </div>
+                <div class="proj-card-body proj-coming-body">
+                  <h3 class="proj-name coming-soon-title">Coming Soon</h3>
+                  <p class="proj-desc coming-soon-desc">sedang dalam pengerjaan</p>
+                  <div class="coming-soon-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
+
+        <!-- Dots indicator -->
+        <div class="proj-dots" id="projDots">
+          <button class="proj-dot active" data-index="0" aria-label="Project 1"></button>
+          <button class="proj-dot" data-index="1" aria-label="Project 2"></button>
+          <button class="proj-dot" data-index="2" aria-label="Project 3"></button>
+        </div>
+
       </div>
     </div>
 
@@ -152,6 +229,7 @@
 
       <div class="card" id="contact">
         <div class="card-header">
+          <i class="fas fa-share-nodes"></i>
           <h2 class="card-title">Kontak</h2>
         </div>
 

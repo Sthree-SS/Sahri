@@ -53,3 +53,60 @@ function setActiveNav() {
 
 window.addEventListener('scroll', setActiveNav, { passive: true });
 setActiveNav();
+// ── PROJECT CAROUSEL ──
+(function () {
+  const track = document.getElementById('projTrack');
+  const dots  = document.querySelectorAll('.proj-dot');
+  const prev  = document.getElementById('projPrev');
+  const next  = document.getElementById('projNext');
+  if (!track) return;
+
+  const slides = track.querySelectorAll('.proj-slide');
+  let current = 0;
+  const total = slides.length;
+
+  function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    prev.disabled = false;
+    next.disabled = false;
+  }
+
+  prev.addEventListener('click', () => goTo(current - 1));
+  next.addEventListener('click', () => goTo(current + 1));
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => goTo(+dot.dataset.index));
+  });
+
+  // Touch / swipe support
+  let startX = 0, isDragging = false;
+  const outer = track.parentElement;
+
+  outer.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  }, { passive: true });
+
+  outer.addEventListener('touchend', e => {
+    if (!isDragging) return;
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    isDragging = false;
+  }, { passive: true });
+
+  // Mouse drag support
+  outer.addEventListener('mousedown', e => {
+    startX = e.clientX;
+    isDragging = true;
+  });
+  outer.addEventListener('mouseup', e => {
+    if (!isDragging) return;
+    const diff = startX - e.clientX;
+    if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+    isDragging = false;
+  });
+  outer.addEventListener('mouseleave', () => { isDragging = false; });
+})();
+
